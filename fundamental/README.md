@@ -91,7 +91,81 @@ Popular web servers include:
 ## 6. What is DNS (Domain Name System)?
 **DNS** stands for Domain Name System. It is a system that translates human-readable domain names (e.g., `www.example.com`) into machine-readable IP addresses (e.g., `192.0.2.1`). When you type a domain name into a browser, DNS helps your browser locate the web server hosting the website.
 
-## 7. What is a Browser?
+## 7. What is URL?
+A **URL (Uniform Resource Locator)** is the address of a resource (like a webpage, file, or API) on the internet. It’s what you type in a browser’s address bar to visit a website.
+
+### Structure of a URL
+A URL has several parts:
+```bash
+https://www.example.com:8080/path/to/page?query=value#section
+```
+1. **Scheme (Protocol)** → `https://`
+- Defines how to access the resource. Common protocols:
+
+  - `http://` (HyperText Transfer Protocol)
+
+  - `https://` (Secure HTTP, encrypted)
+
+  - `ftp://` (File Transfer Protocol)
+
+2. **Domain (Host Name)** → `example.com`
+- Identifies the website’s server. Examples:
+
+  - `google.com`
+
+  - `github.com`
+
+  - `localhost` (for local testing)
+
+4. **Subdomain** → `www`
+- subdomain is a another part of domain or another section, example:
+  - `www.google.com`
+
+  - `mail.yahoo.com`
+
+  - `m.youtube.com`
+
+5. **Port (Optional)** → `:8080`
+- A number specifying the connection point on the server. Common ports:
+
+  - `80` → Default for HTTP
+
+  - `443` → Default for HTTPS
+
+  - `8000` → Often used for development servers (e.g., Django)
+
+6. **Path** → `/path/to/page`
+- Specifies the location of a resource on the server.
+
+7. **Query Parameters (Optional)** → `?query=value`
+- Extra data sent to the server.
+
+- Format: `?key1=value1&key2=value2`
+
+- Example: `?search=django&page=2`
+
+8. **Fragment (Optional)** → `#section`
+- Jumps to a specific part of a page.
+
+- Example: h`ttps://example.com/page#contact` (Scrolls to the "contact" section)
+
+### Example in a Real Scenario
+If you search for "Python" on Google, the URL might be:
+
+```arduino
+https://www.google.com/search?q=python
+```
+- **Scheme:** `https://`
+
+- **Domain:** `google.com`
+
+- **Subdomain:** `www`
+
+- **Path:** `/search`
+
+- **Query Parameters:** `?q=python` (meaning search for "python")
+
+## 8. What is a Browser?
 **A browser** is a client-side application that allows users to view web pages and interact with web content. It sends HTTP requests to web servers and displays the HTTP responses (e.g., HTML, images, etc.) for the user to see.
 
 Examples of popular browsers:
@@ -104,7 +178,7 @@ Examples of popular browsers:
 
 - Microsoft Edge
 
-## 8. What is HTML (HyperText Markup Language)?
+## 9. What is HTML (HyperText Markup Language)?
 **HTML** is the standard markup language used to create web pages. It structures content by using elements like headings, paragraphs, images, and links. HTML defines the structure of a web page, while CSS and JavaScript define its style and behavior.
 
 ### Example HTML:
@@ -121,7 +195,7 @@ Examples of popular browsers:
     </html>
 ```
 
-## 9. What is CSS (Cascading Style Sheets)?
+## 10. What is CSS (Cascading Style Sheets)?
 **CSS** is a style sheet language used to describe the look and formatting of a web page. It controls the appearance of HTML elements, such as their colors, fonts, layouts, and positioning.
 
 ### Example CSS:
@@ -137,14 +211,14 @@ p {
 }
 ```
 
-## 10. What is JavaScript?
+## 11. What is JavaScript?
 **JavaScript** is a programming language used to make web pages interactive. It is primarily executed on the client side (in the browser) and allows for dynamic content, form validation, animations, and more.
 
 ### Example JavaScript:
 ```js
 document.getElementById("demo").innerHTML = "Hello, World!";
 ```
-## 11. Web Development Overview
+## 12. Web Development Overview
 **Web development** involves creating websites and web applications. It is typically divided into two parts:
 
 - **Frontend**: The part of the web that users interact with, including HTML, CSS, and JavaScript.
