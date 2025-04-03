@@ -7,4 +7,3 @@ here in this class we gonna to learn about whats is web and what is web applicat
 2) fundamental of web
 3) flask basics
 4) django basics
-5) 
