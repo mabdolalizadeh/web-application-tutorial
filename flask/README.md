@@ -14,6 +14,9 @@ In your terminal or command prompt, type:
 ```bash
 pip install Flask
 ```
+> [!WARNING]
+> Do u know what is `pip`?
+
 Make sure **Python** is installed before running this.
 
 ## ▶️ How to Run a Flask App
@@ -143,10 +146,19 @@ if __name__ == "__main__":
 <br>
 
 # Tasks
-- make a simple flask app:
+- make a simple flask app and add do these as **home poge**:
   - that has a template (u can download it) 
   - use redirect in it
+    - after redirection check the status code. what was it?
+    - use a button to redirect to ip checker page
   - use variable to render template
+    - check how to add more than one variable
   - check requests
+    - check more functions of request
+- make a route that shows **ip** of client
+- make a route for login form
+  - the username should be `user` and password be `pass` to login
+  - if password is incorrect show a `ur password or username is incorrect do u wanna change ur password?`
+  - if user and pass is OK redirect to the **home page**.
 - **optional**:
   - its so good if you learn about *what is deploy?* and ***deploy*** ur app.
